@@ -1,0 +1,54 @@
+{
+  "personal": [
+    {
+      "name": "ee",
+      "surname": "ee",
+      "patronymic": null,
+      "id": 1
+    },
+    {
+      "name": "уу",
+      "surname": "уу",
+      "patronymic": null,
+      "phone": "уу",
+      "mail": "уу",
+      "birthday": "ууу",
+      "group": "уу",
+      "direction": "уу",
+      "id": 2
+    },
+    {
+      "name": "уу",
+      "surname": "кк",
+      "patronymic": null,
+      "phone": "нн",
+      "mail": "нн",
+      "birthday": "рр",
+      "group": "тт",
+      "direction": "нн",
+      "id": 3
+    },
+    {
+      "name": "нн",
+      "surname": "нн",
+      "patronymic": "нннн",
+      "phone": "нн",
+      "mail": "нн",
+      "birthday": "нн",
+      "group": "нн",
+      "direction": "ннн",
+      "id": 4
+    },
+    {
+      "name": "уу",
+      "surname": "ууу",
+      "patronymic": "уу",
+      "phone": "уу",
+      "mail": "уу",
+      "birthday": "уу",
+      "group": "уу",
+      "direction": "уу",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+<form [formGroup]="personalForm" (ngSubmit)="save()">
+    <div class="row">
+        <div class="col-12 nt-3">
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" class="form-control" id="name" placeholder="Имя" formControlName="name" [ngClass]="{'has-error': personalForm.get('name')?.invalid && personalForm.get('name')?.touched}" />
+            </div>
+            <div class="form-text text-outlet">
+                Обязательное поле до 100 символов
+            </div>
+        </div>
+        <div class="col-12 nt-3">
+            <div class="form-group">
+                <label for="surname">Фамилия</label>
+                <input type="text" class="form-control" id="surname" placeholder="Фамилия" formControlName="surname" [ngClass]="{'has-error': personalForm.get('surname')?.invalid && personalForm.get('surname')?.touched}" />
+            </div>
+            <div class="form-text text-outlet">
+                Обязательное поле до 100 символов
+            </div>
+            <div class="col-12 nt-3">
+                <div class="form-group">
+                    <label for="patronymic">Отчество</label>
+                    <input type="text" class="form-control" id="patronymic" placeholder="Отчество" formControlName="patronymic" [ngClass]="{'has-error': personalForm.get('patronymic')?.invalid && personalForm.get('patronymic')?.touched}" />
+                </div>
+                <div class="form-text text-outlet">
+                    до 100 символов
+                </div>
+            </div>
+        </div>
+        <div class="col-12 nt-3">
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="text" class="form-control" id="phone" placeholder="Телефон" formControlName="phone" [ngClass]="{'has-error': personalForm.get('phone')?.invalid && personalForm.get('phone')?.touched}" />
+            </div>
+            <div class="form-text text-outlet">
+                Обязательное поле 11 символов
+            </div>
+        </div>
+        <div class="col-12 nt-3">
+            <div class="form-group">
+                <label for="mail">Почта</label>
+                <input type="text" class="form-control" id="mail" placeholder="Почта" formControlName="mail" [ngClass]="{'has-error': personalForm.get('mail')?.invalid && personalForm.get('mail')?.touched}" />
+            </div>
+            <div class="form-text text-outlet">
+                Обязательное поле
+            </div>
+        </div>
+        <div class="col-12 nt-3">
+            <div class="form-group">
+                <label for="birthday">Дата рождения</label>
+                <input type="text" class="form-control" id="birthday" placeholder="Дата рождения" formControlName="birthday" [ngClass]="{'has-error': personalForm.get('birthday')?.invalid && personalForm.get('birthday')?.touched}" />
+            </div>
+            <div class="form-text text-outlet">
+                Обязательное поле
+            </div>
+        </div>
+        <div class="col-12 nt-3">
+            <div class="form-group">
+                <label for="group">Группа</label>
+                <input type="text" class="form-control" id="group" placeholder="Группа" formControlName="group" [ngClass]="{'has-error': personalForm.get('group')?.invalid && personalForm.get('group')?.touched}" />
+            </div>
+            <div class="form-text text-outlet">
+                Обязательное поле
+            </div>
+        </div>
+        <div class="col-12 nt-3">
+            <div class="form-group">
+                <label for="direction">Направление подготовки</label>
+                <input type="text" class="form-control" id="direction" placeholder="Направление подготовки" formControlName="direction" [ngClass]="{'has-error': personalForm.get('direction')?.invalid && personalForm.get('direction')?.touched}" />
+            </div>
+            <div class="form-text text-outlet">
+                Обязательное поле
+            </div>
+        </div>
+
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" [disabled]="personalForm.invalid">Сохранить</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <button type="button" class="btn btn-danger" *ngIf="id" (click)="delete">Удалить</button>
+            </div>
+        </div>
+    </div>
+</form>
